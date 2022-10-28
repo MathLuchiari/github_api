@@ -1,0 +1,137 @@
+.page__home {
+    // position: relative;
+    height: 90vh;
+
+    margin: 1rem;
+
+    background-color: #FDFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__home__header {
+    width: 100%;
+}
+
+.users__list {
+    height: 90%;
+    // flex: 0 0 70%;
+    width: 80%;
+}
+
+.userDetails__page {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #00000099;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .2s;
+}
+
+.userDetails__container {
+    position: absolute;
+
+    height: 80%;
+    width: 60%;
+
+    background-color: #FDFFFF;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.userDetails__info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // flex: 1;
+}
+
+.userDetails__info {
+    flex: 0 0 22%;
+    // padding: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+    
+    &:nth-child(1) {
+        flex: 1;
+    }
+    
+    &:nth-child(2) {
+        flex: 1;
+    }
+    
+    &:nth-child(3) {
+        flex: 2;
+    }
+
+    &:nth-child(4) {
+        flex: 1;
+    }
+}
+
+.userDetails__info--title {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+
+    background-color: #FDFFFF;
+    padding: 0 .3rem;
+
+    transform: translateY(.6rem);
+}
+
+.userDetails__info--data {
+    padding: 1rem;
+
+    width: 100%;
+
+    border: #000 solid .1rem;
+    border-radius: 1rem;
+}
+
+.userDetails__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 130%;
+    font-weight: bold;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    cursor: pointer;
+}
+
+.userDetails__repos-container {
+    width: 100%;
+    height: 22rem;
+}
+
+.userDetails__title {
+    color: #000;
+}
