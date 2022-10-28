@@ -8,7 +8,6 @@ import UserDetails from './components/UserDetails'
 import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
 import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
 import './css/style.css';
-import { getUserRepos } from './scripts/api_shawn_and_partners/controllers';
 
 import DetailsRenderer from './scripts/detailsRenderer.jsx';
 
